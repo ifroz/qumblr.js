@@ -3,5 +3,6 @@
     "TUMBLR_APP_KEY": "",
     "TUMBLR_APP_SECRET": "",
     "RABBITMQ_CREDENTIALS": {}
-  }
+  },
+  "logger": {}
 }

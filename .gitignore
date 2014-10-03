@@ -1,4 +1,5 @@
 .idea/
+log/
 atlassian-ide-plugin.xml
 node_modules/
 config/prod.json

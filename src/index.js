@@ -38,14 +38,17 @@ var self = function(dependencies) {
             var tumblrCallback = function(err, res) {
               var logInfo = (res && res.logInfo) || {};
               _.assign(logInfo, task.logInfo||{});
+              logInfo.command = task.command;
+
+
               if (err) {
                 job.retry();
-                logger.info('share-fail', logInfo);
+                logger.info('tumblr-queue-fail', logInfo);
               } else {
                 if (options.successQueueName) {
                   mq.publish(options.successQueueName, logInfo);
                 }
-                logger.info('share-success', logInfo);
+                logger.info('tumblr-queue-success', logInfo);
               }
             };
 
