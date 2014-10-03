@@ -1,0 +1,19 @@
+{
+  "name": "qumblr.js",
+  "version": "0.0.0",
+  "description": "Qumblr is a bridge between AMQP and tumblr API for querying tumblr",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ifroz",
+  "license": "ISC",
+  "dependencies": {
+    "amqp": "^0.2.0",
+    "amqp-retry": "0.0.7",
+    "lodash": "^2.4.1",
+    "nconf": "^0.6.9",
+    "tumblr-pool.js": "git://github.com/Brickflow/tumblr-pool.js",
+    "log-demultiplexer": "git://github.com/Brickflow/node-log-demultiplexer"
+  }
+}
