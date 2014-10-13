@@ -40,7 +40,7 @@ var self = function(dependencies) {
               _.assign(logInfo, task.logInfo||{});
               logInfo.command = task.command;
 
-
+              job.acknowledge(); // ACK, esp. if job.retry() also happens
               if (err) {
                 job.retry();
                 logger.info('tumblr-queue-fail', logInfo);
@@ -59,7 +59,7 @@ var self = function(dependencies) {
 
           };
 
-          q.subscribe(retry(5000, 1, qHandler));
+          q.subscribe({ ack: true }, retry(5000, 5, qHandler));
         });
 
       });
