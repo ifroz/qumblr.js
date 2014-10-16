@@ -59,7 +59,7 @@ var self = function(dependencies) {
 
           };
 
-          q.subscribe({ ack: true }, retry(5000, 5, qHandler));
+          q.subscribe({ ack: true }, retry(20000, 5, qHandler));
         });
 
       });
