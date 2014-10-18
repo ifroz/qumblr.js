@@ -1,6 +1,6 @@
 {
   "name": "qumblr.js",
-  "version": "0.0.1",
+  "version": "0.0.1:x8",
   "description": "Qumblr is a bridge between AMQP and tumblr API for querying tumblr",
   "main": "src/index.js",
   "scripts": {
