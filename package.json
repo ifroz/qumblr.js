@@ -13,7 +13,6 @@
     "amqp-retry": "0.0.7",
     "lodash": "^2.4.1",
     "nconf": "^0.6.9",
-    "tumblr-pool.js": "git://github.com/Brickflow/tumblr-pool.js",
-    "log-demultiplexer": "git://github.com/Brickflow/node-log-demultiplexer"
+    "tumblr-pool.js": "git://github.com/Brickflow/tumblr-pool.js"
   }
 }
